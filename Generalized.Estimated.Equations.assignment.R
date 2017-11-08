@@ -60,7 +60,7 @@ anova(fit.exch,fit2) #Since pvalue is .19 we confirm that Sex is not significant
 #Model diagnotics 
 est <- esticon(fit.exch, diag(6)) ##diag is the number of predictors in the model. 
 est #factor 4 and 5 are the only ones where their CI includes zero. This confirms that Dose1 and SexM are not sig
-summary(fit.exh) #To see which row goes with which factor
+summary(fit.exch) #To see which row goes with which factor
 
 
 OR.CI <- exp(cbind(est$Estimate, est$Lower, est$Upper))
